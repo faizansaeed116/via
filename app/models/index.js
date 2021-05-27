@@ -7,15 +7,15 @@ let pool1 = new mssql.ConnectionPool({ /* config */
 
   user: process.env.DB_USER,
   password: process.env.DB_PWD,
-  server: 'localhost',
+  server: 'olebot.cl4wsbkb9qhh.us-west-2.rds.amazonaws.com',
   database: process.env.DB_NAME,
   pool: {
+    idleTimeoutMillis: 60000,
     max: 10,
     min: 0,
-    idleTimeoutMillis: 30000
   },
   options: {
-    encrypt: false,
+    encrypt: true,
     enableArithAbort: false 
 
   }
