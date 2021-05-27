@@ -1,0 +1,33 @@
+{
+  "db": {
+    "development": {
+      "username": "root",
+      "password": "Super@1234",
+      "database": "Via",
+      "host": "localhost",
+      "dialect": "mssql",
+      "port":"",
+      "operatorsAliases": false,
+      "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+      }
+    },
+    "test": {
+      "username": "root",
+      "password": "Super@1234",
+      "database": "Via",
+      "host": "DESKTOP-J3I8PQ1/Acrux",
+      "dialect": "mssql"
+    },
+    "production": {
+      "username": "root",
+      "password": "Super@1234",
+      "database": "Via",
+      "host": "DESKTOP-J3I8PQ1/Acrux",
+      "dialect": "mssql"
+    }
+  }
+}
