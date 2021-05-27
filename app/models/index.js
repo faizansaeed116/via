@@ -20,9 +20,6 @@ let pool1 = new mssql.ConnectionPool({ /* config */
 
   }
 })
-pool1.on('error', err => {
-  logger.error(err);
-  throw new Error(err);
-})
+
 
 module.exports = pool1;
